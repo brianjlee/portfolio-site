@@ -47,6 +47,9 @@ h1 {
 h2 {
 	font: 400 1.5em/1.5 "Arvo";
 }
+small {
+	font: 400 .5em/1.5 "Arvo";
+}
 
 .material-icons {
 	vertical-align: bottom;
@@ -69,7 +72,8 @@ h2{
 	background: #230931;
 	width: 100vw;
 	display: flex;
-	justify-content: center;
+	flex-flow: column;
+	align-items: center;
 }
 .main-nav ul{
 	display: flex;
@@ -77,6 +81,7 @@ h2{
 .main-nav li{
 	padding: 15px;
 }
+.main-nav li,
 .main-nav a{
 	color: #fff;
 	text-transform: uppercase;
@@ -91,6 +96,12 @@ h2{
 		flex-flow: column;
 		justify-content: center;
 	}
+}
+.nav-row2{
+	background: #402051;
+}
+.nav-row2 .current-version{
+	background: #230931;
 }
 
 /*main*/
@@ -116,7 +127,7 @@ main{
 	display: inline-block;
 	padding: 10px;
 	color: #fff;
-	font: 400 .7em/1.5 "Arvo", Helvetica, Arial, sans-serif;
+	font: 400 .7em/1.5 "Arvo";
 }
 .foot-nav a:hover li{
 	background: #fff;
