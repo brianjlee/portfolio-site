@@ -10,10 +10,14 @@ main {
 
 #banner {
   background-image: url(../img/banner.jpg);
-  background-color: rgba(150,150,150,.4);
   background-size: cover;
   min-height: 40vw;
-  background-blend-mode: lighten;
+}
+
+@media (max-width:600px) {
+  #banner h2{
+    color: white;
+  }
 }
 
 h1,

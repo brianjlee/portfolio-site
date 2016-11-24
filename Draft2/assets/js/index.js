@@ -16,11 +16,8 @@
     offset: 0
   });
 
-  const carouselNext = function() {
-    $('.carousel.carousel-slider').carousel('next');
-  };
-
-  setInterval(carouselNext(), 1000);
-
+  setInterval(() => {
+    $('#photo-slides').carousel('next');
+  }, 5000)
 
 })();
