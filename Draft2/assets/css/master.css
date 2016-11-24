@@ -8,9 +8,20 @@ main {
   flex-grow: 1
 }
 
-header {
+#banner {
   background-image: url(../img/banner.jpg);
+  background-color: rgba(150,150,150,.4);
   background-size: cover;
   min-height: 40vw;
+  background-blend-mode: lighten;
+}
 
+h1,
+h2,
+h4 {
+  font-family: "Roboto slab", sans-serif;
+}
+
+h6 {
+  text-transform: uppercase;
 }
