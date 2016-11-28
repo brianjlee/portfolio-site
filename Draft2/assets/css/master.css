@@ -9,7 +9,7 @@ main {
 }
 
 #banner {
-  background-image: url(../img/photo/banner.jpg);
+  background-image: url(../img/photo/banner_small.jpg);
   background-size: cover;
   min-height: 40vw;
 }
@@ -32,4 +32,8 @@ h6 {
 
 .twitter-follow-button{
   margin: 15px 0;
+}
+
+li:hover{
+  color: red;
 }
