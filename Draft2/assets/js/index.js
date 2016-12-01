@@ -20,4 +20,15 @@
     $('#photo-slides').carousel('next');
   }, 5000)
 
+  $('#expand').click(() => {
+    $('details').prop('open', true);
+    $('#close-expand').removeClass('hide');
+    $('#expand').addClass('hide');
+  })
+
+  $('#close-expand').click(() => {
+    $('details').prop('open', false);
+    $('#close-expand').addClass('hide');
+    $('#expand').removeClass('hide');
+  })
 })();
