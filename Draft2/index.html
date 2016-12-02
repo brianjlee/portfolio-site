@@ -53,6 +53,7 @@
                 <li>CSS3 <i class="fa fa-fw fa-css3"></i></li>
                 <li>jQuery</li>
                 <li>Materialize</li>
+                <li>HTTP & AJAX (JSON)</li>
                 <li>Git <i class="fa fa-fw fa-git"></i></li>
                 <li>Github <i class="fa fa-fw fa-github"></i></li>
                 <li>Adobe CC (Photoshop, Illustrator)</li>
@@ -62,11 +63,13 @@
             <!-- let's hope I finish my resume soon-->
             <div class="col s12 m6">
               <h6><i class="fa-fw fa fa-graduation-cap"></i> Education:</h6>
-              <dl class="">
+              <dl class="education">
                 <dt>Galvanize — Seattle, WA</dt>
                 <dd>Web Development Intensive</dd>
+                <dd>October 2016 – April 2017 (expected)</dd>
                 <dt>Northwestern University — Evanston, IL</dt>
                 <dd>B.A. in Political Science</dd>
+                <dd>2014</dd>
               </dl>
             </div>
             <div class="col s12 m8 offset-m2 border-top">
@@ -121,7 +124,7 @@
                 </li>
                 <li>
                   <a id="expand"><h6>Click to expand all</h6></a>
-                  <a id="close-expand" class="hide"><h6>Click to shrink all</h6></a>
+                  <a id="close-expand" class="hide"><h6>Click to collapse all</h6></a>
                 </li>
               </ul>
             </div>
@@ -226,21 +229,27 @@
             </div>
             <div class="col s12 m7">
               <h5 class="center-align">Direct Message</h5>
-              <form class="">
+              <form id="message" action="https://formspree.io/brzsofcl@gmail.com" method="POST">
                 <div class="input-field">
+                  <i class="fa fa-fw fa-user prefix"></i>
                   <input type="text" name="name" value="">
                   <label for="">Name</label>
                 </div>
                 <div class="input-field">
-                  <input type="email" name="name" value="">
+                  <i class="fa fa-fw fa-address-book prefix"></i>
+                  <input type="email" name="_replyto" value="">
                   <label for="">Email</label>
                 </div>
                 <div class="input-field">
-                  <textarea class="materialize-textarea" name="name" rows="8" cols="40"></textarea>
+                  <i class="fa fa-fw fa-comment prefix"></i>
+                  <textarea class="materialize-textarea" name="message" rows="8" cols="40"></textarea>
                   <label for="">Message</label>
                 </div>
                 <div class="center-align">
-                  <button class="btn deep-purple" type="submit" name="button">Submit</button>
+                  <input type="hidden" name="_next" value="index.html" />
+                  <input type="text" name="_gotcha" style="display:none" />
+                  <input type="hidden" name="_format" value="plain" />
+                  <button id="send" class="btn deep-purple waves-effect" type="submit" value="Send"><i class="fa fa-envelope-open-o"></i> Submit</button>
                 </div>
               </form>
             </div>
@@ -277,7 +286,6 @@
       <div class="footer-copyright">
         <div class="container">
           © Brian Lee, 2016
-          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
         </div>
       </div>
     </footer>

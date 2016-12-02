@@ -52,6 +52,9 @@ h6 {
   }
 }
 
+.education dd {
+  margin-left: 1em;
+}
 
 summary p {
   display: inline-block;

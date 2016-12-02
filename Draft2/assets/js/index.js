@@ -31,4 +31,17 @@
     $('#close-expand').addClass('hide');
     $('#expand').removeClass('hide');
   })
+
+  $('#message').on('submit', () => {
+    event.preventDefault();
+  })
+
+  $('#send').on('mousedown', () => {
+    $('#send i').toggleClass('fa-envelope-open-o fa-envelope');
+  })
+
+  $('#send').on('mouseup', () => {
+    $('#send i').toggleClass('fa-envelope-open-o fa-envelope');
+  })
+
 })();
