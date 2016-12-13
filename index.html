@@ -42,11 +42,17 @@
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#photography">Photography</a></li>
           <li><a href="#connect">Connect</a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown-nav">Home <i class="fa fa-caret-down"></i></a></li>
         </ul>
       </div>
     </nav>
+    <ul id="dropdown-nav" class="dropdown-content">
+      <li><a href="index.html">Home</a></li>
+      <li class="divider"></li>
+      <li><a href="photo.html">Photography</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
     <header id="banner">
       <div class="container">
         <h1>Brian Lee</h1>
@@ -68,6 +74,7 @@
               <h6><i class="fa-fw fa fa-pencil-square-o"></i> Skills:</h6>
               <ul>
                 <li>JavaScript</li>
+                <li>Node.js</li>
                 <li>HTML5 <i class="fa fa-fw fa-html5"></i></li>
                 <li>CSS3 <i class="fa fa-fw fa-css3"></i></li>
                 <li>jQuery</li>
@@ -154,6 +161,27 @@
             <h4 class="center-align">Projects</h4>
             <h5 class="center-align">Featured projects</h5>
           </div>
+          <div class="feature-project row">
+            <div class="col s12">
+              <div class="card large">
+                <div class="card-image">
+                  <img src="assets/img/project/shuffle-repeat.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title">shuffle/repeat</span>
+                  <p>
+                    This site is meant as a teaching tool for probabilities of randomly occurring events by simulating shuffling a deck, picking a random card and repeating.
+                  </p>
+                  <h6>Built using: JavaScript, Materialize framework, jQuery</h6>
+                </div>
+                <div class="card-action">
+                  <a href="projects.html">Read more</a>
+                  <a href="http://probability.brianjlee.net">link</a>
+                  <a href="https://github.com/brianjleeofcl/q1-project"><i class="fa fa-fw fa-github"></i>github</a>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="row">
             <div class="col s12 m4">
               <div class="card hoverable">
@@ -221,20 +249,8 @@
           </div>
           <div class="row">
             <a href="https://github.com/brianjlee"><h6 class="center-align"><i class="fa fa-fw fa-github"></i> Github profile</h6></a>
-            <a href="projects.html"><h6 class="center-align">Click here for a full list of past and current projects</h6></a>
+            <!-- <a href="projects.html"><h6 class="center-align">Click here for a full list of past and current projects</h6></a> -->
           </div>
-        </section>
-        <section id="photography" class="section scrollspy">
-          <h4 class="center-align">Photography</h4>
-          <div id="photo-slides" class="carousel carousel-slider">
-            <a class="carousel-item"><img src="assets/img/photo/3.jpg"></a>
-            <a class="carousel-item"><img src="assets/img/photo/4.jpg"></a>
-            <a class="carousel-item"><img src="assets/img/photo/5.jpg"></a>
-            <a class="carousel-item"><img src="assets/img/photo/6.jpg"></a>
-            <a class="carousel-item"><img src="assets/img/photo/1.jpg"></a>
-            <a class="carousel-item"><img src="assets/img/photo/2.jpg"></a>
-          </div>
-          <a href="photo.html"><h6 class="center-align">Click here for more</h6></a>
         </section>
         <section id="connect" class="section scrollspy">
           <div class="row">
@@ -280,7 +296,6 @@
         <ul class="section table-of-contents">
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#photography">Photography</a></li>
           <li><a href="#connect">Connect</a></li>
         </ul>
       </div>
