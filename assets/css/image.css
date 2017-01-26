@@ -1,0 +1,14 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/*figure figcaption {
+  margin-top: 100%;
+}*/
+
+#photo-1 {
+  background-image: url(../img/photo/wide-1.jpg);
+  background-size: cover;
+  min-height: 40vw;
+}
